@@ -1,0 +1,18 @@
+2.1
+n45_e013_1arc_v3.tif: 
+EPSG: 4326
+Driver: GTiff
+Format: GeoTIFF
+Auflösung: 0.00028°
+
+N45E014.hgt: 
+EPSG: 4326
+Driver: SRTMHGT
+Format: SRTMHGT
+Auflösung: 0.00028°
+
+2.2: 
+1.: Der Unterschied ist, dass bei gdal_merge eine neue Datei erstellt und so unabhängig von den Rohdaten ist. Bei gdalbuild wird nur eine Verknüpfung auf die Daten hergestellt.
+2.: Der Vorteil von gdalbuildvrt ist, dass es weniger Speicherplatz braucht und eine schnelle Bearbeitung möglich ist.
+
+
